@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 public class SplashScreenActivity extends AppCompatActivity {
@@ -13,7 +14,8 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen_activity);
-        /*new Handler().postDelayed(new Runnable(){
+        Log.d("TAG", "setContent");
+        new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
                 Intent intent = new Intent(
@@ -22,6 +24,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 3200);*/
+        }, 3200);
     }
 }
