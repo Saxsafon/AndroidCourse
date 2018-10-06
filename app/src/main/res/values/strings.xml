@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StarWars</string>
+
+    <!-- SplashScreen -->
+    <string name="splash_screen_title">Star\nWars</string>
+
+    <string name="action_load_data">Load data</string>
+</resources>

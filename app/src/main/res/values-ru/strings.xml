@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Звездные Войны</string>
+
+    <string name="splash_screen_title">Звездные\nВойны</string>
+
+    <string name="action_load_data">Загрузить данные</string>
+
+</resources>

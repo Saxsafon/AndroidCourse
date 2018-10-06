@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="48dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/card_1_wrapper"
+                    layout="@layout/item_card_wrapper"/>
+
+                <include
+                    android:id="@+id/card_2_wrapper"
+                    layout="@layout/item_card_wrapper"/>
+
+                <include
+                    android:id="@+id/card_3_wrapper"
+                    layout="@layout/item_card_wrapper"/>
+
+                <include
+                    android:id="@+id/card_4_wrapper"
+                    layout="@layout/item_card_wrapper"/>
+
+                <include
+                    android:id="@+id/card_5_wrapper"
+                    layout="@layout/item_card_wrapper"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/action_load_data"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/action_load_data"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

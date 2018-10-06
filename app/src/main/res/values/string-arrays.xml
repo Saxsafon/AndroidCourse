@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="persons">
+        <item>Luke Skywalker</item>
+        <item>C-3PO</item>
+        <item>R2-D2</item>
+        <item>Darth Vader</item>
+        <item>Leia Organa</item>
+    </string-array>
+
+</resources>
