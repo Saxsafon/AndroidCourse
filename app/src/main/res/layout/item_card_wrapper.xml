@@ -2,6 +2,7 @@
 <LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -24,14 +25,15 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/person_name_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textColor="@android:color/black"/>
+        android:id="@+id/person_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
 
     </LinearLayout>
+
 </LinearLayout>

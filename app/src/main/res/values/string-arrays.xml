@@ -7,6 +7,11 @@
         <item>R2-D2</item>
         <item>Darth Vader</item>
         <item>Leia Organa</item>
+        <item>Lando Calrissian</item>
+        <item>Boba Fett</item>
+        <item>Chewbacca</item>
+        <item>Han Solo</item>
+        <item>Darth Maul</item>
     </string-array>
 
 </resources>

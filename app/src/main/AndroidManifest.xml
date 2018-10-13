@@ -20,7 +20,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".HomeActivity"
+            android:configChanges="orientation|screenSize"/>
+
 
         <activity android:name=".CardActivity"/>
 
