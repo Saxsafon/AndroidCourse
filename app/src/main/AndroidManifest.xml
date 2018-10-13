@@ -21,8 +21,7 @@
         </activity>
 
         <activity android:name=".HomeActivity"
-            android:configChanges="orientation|screenSize"/>
-
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
 
         <activity android:name=".CardActivity"/>
 
