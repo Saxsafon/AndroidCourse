@@ -72,14 +72,4 @@ public class HomeActivity
             }
         }, 3200);
     }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        } else {
-            mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-        }
-    }
 }
