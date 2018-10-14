@@ -48,7 +48,6 @@ public class HomeActivity
 
     private void setupList() {
         mAdapter = new HeroRecyclerAdapter();
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mAdapter);
     }
 
