@@ -7,4 +7,5 @@
 
     <string name="action_load_data">Загрузить данные</string>
 
+    <string name="failure_title">Ошибка</string>
 </resources>

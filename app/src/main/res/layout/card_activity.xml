@@ -29,6 +29,25 @@
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/person_name_text_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Отмена"/>
+
+                <Button
+                    android:id="@+id/btn_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Запрос"/>
             </LinearLayout>
 
         </LinearLayout>

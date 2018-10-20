@@ -5,4 +5,6 @@
     <string name="splash_screen_title">Star\nWars</string>
 
     <string name="action_load_data">Load data</string>
+
+    <string name="failure_title">Failure</string>
 </resources>
