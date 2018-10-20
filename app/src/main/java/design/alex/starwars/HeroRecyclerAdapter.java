@@ -19,11 +19,20 @@ public class HeroRecyclerAdapter
         extends
         RecyclerView.Adapter<HeroRecyclerAdapter.HeroViewHolder> {
 
+    private Integer mTotalCount;
     private List<People> mPeoples = new ArrayList<>();
 
     public void addAll(List<People> peoples) {
         mPeoples.addAll(peoples);
         notifyDataSetChanged();
+    }
+
+    public void setTotalCount(Integer totalCount) {
+        mTotalCount = totalCount;
+    }
+
+    public Integer getTotalCount() {
+        return mTotalCount;
     }
 
     @NonNull

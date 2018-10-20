@@ -96,6 +96,7 @@ public class HomeActivity
             public void onResponse(@NonNull Call<Result> call, @NonNull Response<Result> response) {
                 mScrollListener.setLoading(false);
                 if (response.isSuccessful() && response.body() != null) {
+                    mAdapter.setTotalCount(response.body().getCount());
                     mAdapter.addAll(response.body().getResults());
                     showContent();
                 } else {
@@ -154,7 +155,8 @@ public class HomeActivity
             mTotalCount = mRecyclerView.getLayoutManager().getItemCount();
             mLastItem = ((LinearLayoutManager)mRecyclerView.getLayoutManager())
                     .findLastVisibleItemPosition();
-            if (!mIsLoading && mTotalCount < (mLastItem + mThreshold)) {
+            if (!mIsLoading && mTotalCount < (mLastItem + mThreshold)
+                    && mTotalCount < mAdapter.getTotalCount()) {
                 fetchData((mTotalCount / 10) + 1);
                 setLoading(true);
             }
@@ -170,3 +172,5 @@ public class HomeActivity
         }
     }
 }
+
+
